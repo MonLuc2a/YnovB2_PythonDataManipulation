@@ -1009,6 +1009,3 @@ def exo50():
 
     cm = a1.calcule_centre_masse(a2)
     print(cm)
-
-
-exo20()

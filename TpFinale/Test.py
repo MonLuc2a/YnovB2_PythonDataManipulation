@@ -22,7 +22,7 @@ class NimGame:
 
     def take_matchsticks(self, line):
         if self.turn == "player":
-            matches = simpledialog.askinteger("Allumettes", f"Combien d'allumettes voulez-vous prendre dans la ligne {line+1}?", minvalue=1, maxvalue=self.lines[line])
+            matches = simpledialog.askinteger("Allumettes", f"Combien d'allumettes voulez-vous prendre dans la ligne {line+1}?", minvalue=1, maxvalue=3)
             if matches is not None:
                 self.lines[line] -= matches
                 self.line_buttons[line].config(text=f"Ligne {line+1}: {self.lines[line]} allumettes")
