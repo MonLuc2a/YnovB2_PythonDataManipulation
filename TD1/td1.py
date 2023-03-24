@@ -1011,4 +1011,4 @@ def exo50():
     print(cm)
 
 
-exo50()
+exo20()
